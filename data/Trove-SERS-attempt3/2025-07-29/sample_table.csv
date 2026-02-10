@@ -1,7 +1,0 @@
-ID,Name,Group ID
-B4-50mw-3s-10avg-2.csv,sample_on_hydrophobic-50mw-3s-10avg-2,0
-A4-50mw-3s-10avg.csv,sample_on_hydrophilic-50mw-3s-10avg,1
-A4-50mw-3s-10avg-2.csv,sample_on_hydrophilic-50mw-3s-10avg-2,1
-B4-50mw-3s-10avg.csv,sample_on_hydrophobic-50mw-3s-10avg,0
-A3-50mw-3s-10avg.csv,blank_on_hydrophilic-50mw-3s-10avg,4
-B3-50mw-3s-10avg.csv,blank_on_hydrophobic-50mw-3s-10avg,5

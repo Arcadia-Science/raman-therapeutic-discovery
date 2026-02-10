@@ -1,77 +1,38 @@
-[project]
-name = "trove-raman-paper"
-description = "Analysis code for Trove Raman Fractions paper"
-version = "0.1.0"
-readme = "README.md"
-requires-python = ">=3.12"
-license = { text = "MIT" }
-authors = [
-    { name = "Ilya", email = "ilya@arcadia.science" }
-]
-keywords = ["raman", "spectroscopy", "analysis", "SERS"]
-classifiers = [
-    "Development Status :: 3 - Alpha",
-    "Intended Audience :: Science/Research",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.12",
-    "Topic :: Scientific/Engineering :: Chemistry",
-    "Topic :: Scientific/Engineering :: Physics",
-]
-dependencies = [
-    "pandas>=1.5.0",
-    "plotly>=5.0.0",
-    "ramanspy>=0.2.0",
-    "numpy>=1.24.0",
-    "arcadia_pycolor>=0.1.0",
-]
-
-[tool.setuptools.packages.find]
-include = ["raman_analysis*"]
-
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
+[project]
+name = "rs-tick-lipids"
+version = "0.1.0"
+description = "Code supporting the pub Raman spectroscopy-assisted natural therapeutic discovery"
+readme = "README.md"
+requires-python = "==3.12.11"
+dependencies = [
+    "arcadia-pycolor==0.6.5",
+    "cvxopt==1.3.2",
+    "jupyter==1.1.1",
+    "numpy==2.4.2",
+    "pandas==3.0.0",
+    "plotly==6.5.2",
+    "ramanspy==0.2.10",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["raman_analysis"]
 
 [tool.ruff]
-# The directories to consider when resolving first- vs. third-party imports
+# The directories to consider when resolving first- vs. third-party imports.
 src = ["."]
-
 line-length = 100
 indent-width = 4
-
-# run ruff on jupyter notebooks (this is not enabled by default)
 extend-include = ["*.ipynb"]
 
 [tool.ruff.lint.per-file-ignores]
-# ignore star and unused imports
+# Ignore star and unused imports.
 "__init__.py" = ["F403", "F405"]
 
-[tool.ruff.lint]
-select = [
-    # flake8-bugbear
-    "B",
-    # pycodestyle error
-    "E",
-    # pyflakes
-    "F",
-    # isort
-    "I",
-    # pyupgrade
-    "UP",
-    # pycodestyle warning
-    "W",
-]
-
-# rule codes to ignore
-ignore = []
-
-# Allows fix for all enabled rules when `--fix` is provided
-fixable = ["ALL"]
-unfixable = []
-
 [tool.ruff.format]
-# Like Black, use double quotes, indent with spaces, and respect trailing commas
 quote-style = "double"
 indent-style = "space"
 skip-magic-trailing-comma = false
@@ -80,3 +41,13 @@ line-ending = "auto"
 [tool.ruff.lint.isort]
 order-by-type = true
 no-lines-before = ["future", "standard-library"]
+
+[tool.ruff.lint]
+select = [
+    "B",  # flake8-bugbear
+    "E",  # pycodestyle error
+    "F",  # pyflakes
+    "I",  # isort
+    "UP", # pyupgrade
+    "W",  # pycodestyle warning
+]

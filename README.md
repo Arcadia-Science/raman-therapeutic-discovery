@@ -1,91 +1,47 @@
-# Trove Raman Fractions Analysis
+# Raman Spectroscopy and SERS of Tick Lipids
 
-Analysis code and data for the Trove Raman Fractions paper.
+This repo can be used to generate the figure in the pub **Raman spectroscopy-assisted natural therapeutic discovery**. Open and run `notebooks/generate_figure.ipynb`
 
-## Overview
-
-This repository contains the Jupyter notebook analysis for comparing SERS (Surface-Enhanced Raman Spectroscopy) and Raman spectra from Trove fraction samples.
-
-## Repository Structure
-
-```
-trove-raman-paper/
-├── notebooks/
-│   └── trove-raman-fractions.ipynb  # Main analysis notebook
-├── raman_analysis/                   # Python package for Raman data analysis
-│   ├── __init__.py
-│   └── utils.py                      # Utilities for parsing and plotting spectra
-├── data/                             # Spectroscopy data files
-│   ├── 2025-03-18-ticks/            # Raman data
-│   └── Trove-SERS-attempt3/         # SERS data
-│       └── 2025-07-24/
-├── pyproject.toml                    # Package dependencies
-└── README.md
-```
 
 ## Setup
 
 ### Prerequisites
 
-- Python >= 3.12
-- pip or uv package manager
+- [uv](https://docs.astral.sh/uv/) package manager
+- Python 3.12.11
 
-### Installation
+### Usage
 
 1. Clone this repository:
 ```bash
 git clone <repository-url>
-cd trove-raman-paper
+cd 2026-rs-tick-lipids
 ```
 
-2. Install dependencies:
+2. Install dependencies using uv:
 ```bash
+uv sync
+```
+
+This will create a virtual environment and install all dependencies specified in `pyproject.toml`.
+
+3. Activate the virtual environment and install the `raman_analysis` package in editable mode:
+```bash
+source .venv/bin/activate  # On macOS/Linux
+# or
+.venv\Scripts\activate  # On Windows
+
 pip install -e .
 ```
 
-Or using uv:
-```bash
-uv pip install -e .
-```
+Open and run the Jupyter notebook `notebooks/generate_figure.ipynb`
 
-### Dependencies
-
-The main dependencies are:
-- `pandas` - Data manipulation
-- `plotly` - Interactive plotting
-- `ramanspy` - Raman spectroscopy preprocessing
-- `numpy` - Numerical computing
-- `arcadia_pycolor` - Arcadia color schemes for plotting
-
-## Usage
-
-Open and run the Jupyter notebook:
-
-```bash
-jupyter lab notebooks/trove-raman-fractions.ipynb
-```
-
-The notebook performs:
-1. Loading Raman and SERS data from multiple experiments
-2. Preprocessing using RamanSPy pipeline (cropping, despiking, denoising, baseline correction)
-3. Visualization and comparison of spectra
-
-## Data
+## Raw data
 
 The data directory contains:
-- **2025-03-18-ticks/**: Raman spectra from whole extract measurements
-- **Trove-SERS-attempt3/2025-07-24/**: SERS spectra from fraction measurements
+- **2025-03-18-ticks/**: Raman spectra from tick extract measurements
+- **Trove-SERS-attempt3/2025-07-24/**: SERS spectra from tick fraction measurements
 
 Each data directory includes:
 - Spectroscopy data files (.txt, .csv, or .tsv)
 - `sample_table.csv` with metadata mapping file IDs to sample names and groups
-
-## Citation
-
-If you use this code or data, please cite:
-
-[Add citation information here]
-
-## License
-
-MIT License
