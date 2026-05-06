@@ -7,7 +7,7 @@ name = "rs-tick-lipids"
 version = "0.1.0"
 description = "Code supporting the pub Raman spectroscopy-assisted natural therapeutic discovery"
 readme = "README.md"
-requires-python = "==3.12.11"
+requires-python = ">=3.12,<3.13"
 dependencies = [
     "arcadia-pycolor==0.6.5",
     "cvxopt==1.3.2",

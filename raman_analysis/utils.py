@@ -142,7 +142,6 @@ def plot_spectra_in_dir(
     processed_spectra = []  # Store all processed spectra for SpectralContainer
     spectra_names = []  # Store names of processed spectra
 
-
     data_path = Path(data_dir)
     sample_table_path = data_path / "sample_table.csv"
     if sample_table_path.exists():
@@ -204,8 +203,8 @@ def plot_spectra_in_dir(
 
             if subtract_data is None:
                 print(
-                        f"Warning: Could not find subtract spectrum '{subtract_id}'. "
-                        "Proceeding without subtraction."
+                    f"Warning: Could not find subtract spectrum '{subtract_id}'. "
+                    "Proceeding without subtraction."
                 )
             else:
                 # Process subtract spectrum
@@ -320,7 +319,7 @@ def plot_spectra_in_dir(
         showlegend=True,
         title_text=data_path.parent.name,
         template="plotly_white",
-        **plotting_kwargs
+        **plotting_kwargs,
     )
 
     if len(processed_spectra) == 0:

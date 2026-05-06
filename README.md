@@ -1,6 +1,6 @@
 # Raman Spectroscopy and SERS of Tick Lipids
 
-This repo can be used to generate the figure in the pub **Raman spectroscopy-assisted natural therapeutic discovery**. Open and run `notebooks/generate_figure.ipynb`
+This repo can be used to generate the figure in the pub [**Raman spectroscopy may assist natural therapeutic discovery**](https://doi.org/10.57844/arcadia-2mmy-8h28). Open and run `notebooks/generate_figure.ipynb`. It also contains the raw data from the experiments.
 
 
 ## Setup
@@ -8,14 +8,14 @@ This repo can be used to generate the figure in the pub **Raman spectroscopy-ass
 ### Prerequisites
 
 - [uv](https://docs.astral.sh/uv/) package manager
-- Python 3.12.11
+- Python 3.12
 
 ### Usage
 
 1. Clone this repository:
 ```bash
-git clone <repository-url>
-cd 2026-rs-tick-lipids
+git clone https://github.com/Arcadia-Science/raman-bioprospecting/
+cd raman-bioprospecting
 ```
 
 2. Install dependencies using uv:
@@ -25,23 +25,14 @@ uv sync
 
 This will create a virtual environment and install all dependencies specified in `pyproject.toml`.
 
-3. Activate the virtual environment and install the `raman_analysis` package in editable mode:
-```bash
-source .venv/bin/activate  # On macOS/Linux
-# or
-.venv\Scripts\activate  # On Windows
-
-pip install -e .
-```
-
-Open and run the Jupyter notebook `notebooks/generate_figure.ipynb`
+Navigate to `notebooks/` and run the Jupyter notebook `generate_figure.ipynb`.
 
 ## Raw data
 
-The data directory contains:
-- **2025-03-18-ticks/**: Raman spectra from tick extract measurements
-- **Trove-SERS-attempt3/2025-07-24/**: SERS spectra from tick fraction measurements
+The `data` directory contains:
+- **whole-tick-extract/**: Raman spectra from whole tick extract measurements (Round 1)
+- **sers-on-fraction/**: SERS spectra from tick fraction measurements (Round 2)
 
-Each data directory includes:
-- Spectroscopy data files (.txt, .csv, or .tsv)
-- `sample_table.csv` with metadata mapping file IDs to sample names and groups
+Each data subdirectory includes:
+- Raw spectroscopy data files (.csv) containing acquisition metadata and spectra
+- `sample_table.csv` metadata table
