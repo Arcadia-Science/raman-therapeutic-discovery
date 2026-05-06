@@ -14,7 +14,7 @@ This repo can be used to generate the figure in the pub [**Raman spectroscopy ma
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/Arcadia-Science/raman-bioprospecting/
+git clone https://github.com/Arcadia-Science/raman-therapeutic-discovery/
 cd raman-bioprospecting
 ```
 

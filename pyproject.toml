@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "rs-tick-lipids"
 version = "0.1.0"
-description = "Code supporting the pub Raman spectroscopy-assisted natural therapeutic discovery"
+description = "Raman spectroscopy may assist natural therapeutic discovery"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
