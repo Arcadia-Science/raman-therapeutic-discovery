@@ -1,0 +1,63 @@
+cff-version: 1.2.0
+message: If you use this software, please cite the associated publication.
+title: Raman spectroscopy-assisted natural therapeutic discovery
+doi: 10.57844/arcadia-2mmy-8h28
+authors:
+- family-names: Bell
+  given-names: Audrey
+  affiliation: Arcadia Science
+  orcid: https://orcid.org/0009-0008-2270-1613
+- family-names: Chou
+  given-names: Seemay
+  affiliation: Arcadia Science
+  orcid: https://orcid.org/0000-0002-7271-303X
+- family-names: Farboud
+  given-names: Behnom
+  affiliation: Arcadia Science
+  orcid: https://orcid.org/0000-0001-7439-3095
+- family-names: Hochstrasser
+  given-names: Megan L.
+  affiliation: Arcadia Science
+  orcid: https://orcid.org/0000-0002-4404-078X
+- family-names: Kolb
+  given-names: Ilya
+  affiliation: Arcadia Science
+  orcid: https://orcid.org/0000-0001-5100-849X
+- family-names: Mets
+  given-names: David G.
+  affiliation: Arcadia Science
+  orcid: https://orcid.org/0000-0002-0803-0912
+- family-names: Poskanzer
+  given-names: Kira E.
+  affiliation: Arcadia Science
+  orcid: https://orcid.org/0000-0003-4830-8891
+- family-names: Rollins
+  given-names: MaryClare
+  affiliation: Arcadia Science
+  orcid: https://orcid.org/0000-0001-9677-4702
+- family-names: Sharma
+  given-names: Sunanda
+  affiliation: Arcadia Science
+  orcid: https://orcid.org/0000-0001-8822-7960
+preferred-citation:
+  title: Raman spectroscopy-assisted natural therapeutic discovery
+  type: article
+  doi: 10.57844/arcadia-2mmy-8h28
+  authors:
+  - family-names: Chou
+    given-names: Seemay
+    affiliation: Arcadia Science
+    orcid: https://orcid.org/0000-0002-7271-303X
+  - family-names: Kolb
+    given-names: Ilya
+    affiliation: Arcadia Science
+    orcid: https://orcid.org/0000-0001-5100-849X
+  - family-names: Mets
+    given-names: David G.
+    affiliation: Arcadia Science
+    orcid: https://orcid.org/0000-0002-0803-0912
+  - family-names: Sharma
+    given-names: Sunanda
+    affiliation: Arcadia Science
+    orcid: https://orcid.org/0000-0001-8822-7960
+  year: 2026
