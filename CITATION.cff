@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: If you use this software, please cite the associated publication.
-title: Raman spectroscopy-assisted natural therapeutic discovery
+title: Raman spectroscopy may assist natural therapeutic discovery
 doi: 10.57844/arcadia-2mmy-8h28
 authors:
 - family-names: Bell
@@ -40,7 +40,7 @@ authors:
   affiliation: Arcadia Science
   orcid: https://orcid.org/0000-0001-8822-7960
 preferred-citation:
-  title: Raman spectroscopy-assisted natural therapeutic discovery
+  title: Raman spectroscopy may assist natural therapeutic discovery
   type: article
   doi: 10.57844/arcadia-2mmy-8h28
   authors:
